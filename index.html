@@ -30,7 +30,8 @@
       .role, .location { margin: 6px 0 0; color: #aeb9c8; font-size: 14px; line-height: 1.4; }
       .location { margin-top: 2px; color: #929eb0; }
       .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 27px; }
-      .links a { color: #929eb0; font-size: 14px; line-height: 1.2; text-decoration: none; white-space: nowrap; }
+      .links a { position: relative; z-index: 2; padding: 4px 0; color: #929eb0; font-size: 14px; line-height: 1.2; text-decoration: none; white-space: nowrap; cursor: pointer; }
+      .links a:focus-visible { outline: 2px solid #738197; outline-offset: 3px; border-radius: 2px; }
       .links a:hover, .links a:focus-visible { color: #f4f6f8; }
       .side-section { margin-top: 32px; }
       .side-section h2, .section-label { margin: 0 0 14px; color: #738197; font-size: 11px; font-weight: 500; letter-spacing: .08em; line-height: 1.2; text-transform: uppercase; }
@@ -65,6 +66,16 @@
       .selected-work-description { margin: 6px 0 0; }
       .footer { margin-top: 36px; padding-top: 24px; border-top: 1px solid rgba(115, 129, 151, .16); text-align: center; }
       .footer p { margin: 0; color: rgba(115, 129, 151, .78); font-size: 12px; line-height: 1.5; }
+      .highlights { margin: 12px 0 0; padding: 0 0 0 15px; }
+      .highlights li { margin-top: 7px; padding-left: 3px; color: #9eacbf; font-size: 15px; line-height: 1.6; }
+      .highlights li::marker { color: #738197; }
+      .project { margin-top: 22px; }
+      .project h4 { margin: 0; color: #eef2f6; font-size: 15px; font-weight: 600; line-height: 1.4; }
+      .project .tech { margin: 2px 0 0; color: #738197; font-size: 13px; line-height: 1.4; }
+      .skills { display: grid; gap: 12px; margin: 0; }
+      .skill-row { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; }
+      .skill-row dt { color: #eef2f6; font-size: 14px; font-weight: 600; line-height: 1.6; }
+      .skill-row dd { margin: 0; color: #9eacbf; font-size: 15px; line-height: 1.6; }
       .status { max-width: 540px; margin: 12vh auto; padding: 24px; border: 1px solid rgba(115, 129, 151, .22); color: #aeb9c8; }
       .status strong { display: block; margin-bottom: 8px; color: #f4f6f8; }
 
@@ -80,6 +91,7 @@
         .avatar { width: 90px; height: 90px; font-size: 1.25rem; }
         .name { margin-top: 18px; font-size: 1.16rem; }
         .education-list { grid-template-columns: 1fr; gap: 22px; }
+        .skill-row { grid-template-columns: 1fr; gap: 2px; }
         .footer { margin-top: 44px; }
         .entry-top, .selected-work-top { grid-template-columns: 1fr; gap: 4px; }
         .entry-top span, .selected-work-top > span { white-space: normal; }
@@ -90,6 +102,126 @@
     <main id="app" class="page" aria-live="polite">
       <div class="status"><strong>Loading profile…</strong><span>Reading data.json</span></div>
     </main>
+
+<script id="fallback-data" type="application/json">
+{
+  "name": "Saravanan G",
+  "role": "Java Full Stack Developer",
+  "location": "Tenkasi, Tamil Nadu, India",
+  "dp": "https://avatars.githubusercontent.com/u/258072806?s=400&u=7e6cf44f36f3bfff4d779f52c2cdde9fb7431498&v=4",
+  "links": {
+    "GitHub": "https://github.com/saravanan-g-p",
+    "LinkedIn": "https://www.linkedin.com/in/saravanan-g-94176a270",
+    "Email": "mailto:gpsaravanan2002@gmail.com",
+    "Resume": "./Saravanan_CV_A.pdf"
+  },
+  "about": "Java Full Stack Developer with 3 years 5 months of experience building enterprise retail finance, billing, and inventory/stock management systems using Java, Spring Boot microservices, RESTful APIs, Angular, and MySQL/MSSQL. Delivered accounting modules with Tally and SAP integration, HDFC payment gateway integration with dynamic PDF generation, a ticket workflow platform, and a .NET-to-Java migration. Hands-on with Spring Security/JWT (authentication and authorization), JPA/Hibernate, and OTP-based authentication.",
+  "currently_looking_for": "Full Stack Java Developer, Java Backend Developer, Spring Boot Developer, Angular Developer, and enterprise application development roles.",
+  "skills": [
+    {
+      "label": "Backend",
+      "items": "Java, Spring Boot, Spring MVC, Spring Framework, Spring Security, JWT, Microservices Architecture, RESTful API Design & Integration, JPA / Hibernate"
+    },
+    {
+      "label": "Frontend",
+      "items": "Angular, TypeScript, HTML5, CSS3, Angular Material, Responsive UI Design"
+    },
+    {
+      "label": "Databases",
+      "items": "MySQL, MSSQL, Query Optimization"
+    },
+    {
+      "label": "Domain / Integration",
+      "items": "Retail Finance & Accounting, Billing, Inventory/Stock Management, Payment Gateway Integration (HDFC), Tally, SAP, Dynamic PDF Generation"
+    },
+    {
+      "label": "Tools",
+      "items": "Maven, Eclipse, Spring Tool Suite 4, VS Code, Tomcat, Postman, MySQL Workbench, SSMS, SQL Developer"
+    },
+    {
+      "label": "Version Control",
+      "items": "Git, SVN"
+    },
+    {
+      "label": "Platforms",
+      "items": "Windows, Linux (Ubuntu)"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Java Full Stack Developer",
+      "company": "JRK Consulting Services Pvt Ltd",
+      "location": "Tamil Nadu, India",
+      "daterange": "May 2023 – Present",
+      "highlights": [
+        "Built and maintained Java/Spring Boot backend services and Angular frontends for enterprise finance, billing, and workflow applications, owning features from database design through UI delivery.",
+        "Developed secured RESTful APIs with authentication and authorization using Spring Security and JWT, with data access built on JPA/Hibernate over MySQL and MSSQL."
+      ],
+      "work": [
+        {
+          "workname": "Enterprise Retail Financial Management System",
+          "tech": "Java / Spring Boot / Microservices / Angular / MySQL",
+          "points": [
+            "Developed a full-stack financial management system for retail operations using Java, Spring Boot, Angular, and MySQL, built on a microservices architecture.",
+            "Designed independent microservices for Trial Balance, Vendor Purchase, Book Stock (inventory/stock management), and Expense Management, communicating through REST APIs.",
+            "Integrated Tally and SAP for financial reconciliation and reporting.",
+            "Increased accounting accuracy by 30% and reduced manual errors by 40% through automated workflows and validation processes, saving approximately 60 hours per month."
+          ]
+        },
+        {
+          "workname": "Secure Payment & Billing Platform (WebScheme Product)",
+          "tech": "Spring Boot / Angular",
+          "points": [
+            "Enhanced a web-based billing and payment system using Angular and Spring Boot.",
+            "Completed HDFC payment gateway integration for secure online transaction processing.",
+            "Implemented dynamic PDF generation and customized client-specific payment workflows.",
+            "Redesigned 15+ UI components using Angular Material, contributing to a reported 35% increase in customer engagement."
+          ]
+        },
+        {
+          "workname": "Ticket Management System",
+          "tech": "Java / Spring Boot / Workflow Automation",
+          "points": [
+            "Built a Java/Spring Boot service to manage defects, enhancements, and support tickets across the SDLC.",
+            "Automated the ticket lifecycle (creation, assignment, development, QA validation, delivery) with role-based status updates and real-time progress tracking.",
+            "Improved visibility across teams and streamlined development-to-QA handoffs for faster issue resolution."
+          ]
+        },
+        {
+          "workname": "Legacy Application Modernization (.NET to Java Migration)",
+          "tech": "Java / MSSQL / JPA",
+          "points": [
+            "Migrated legacy desktop modules from .NET to Java, improving maintainability and scalability.",
+            "Re-engineered business logic and implemented OTP-based authentication.",
+            "Optimized database interactions using MSSQL and JPA, improving application response times by approximately 25%.",
+            "Maintained backward compatibility during the transition, with 99.9% system uptime."
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "collegename": "Einstein College of Engineering",
+      "degree": "B.E. Mechanical Engineering",
+      "score": "CGPA 8.20/10",
+      "daterange": "2019 – 2023"
+    },
+    {
+      "collegename": "S.S.V Higher Secondary School",
+      "degree": "Higher Secondary (HSC)",
+      "score": "76%",
+      "daterange": "2018 – 2019"
+    },
+    {
+      "collegename": "Government High School",
+      "degree": "Secondary (SSLC)",
+      "score": "92%",
+      "daterange": "2016 – 2017"
+    }
+  ]
+}
+    </script>
 
     <script>
       const app = document.getElementById('app');
@@ -106,7 +238,7 @@
         (Array.isArray(items) ? items : []).forEach((item, index) => fragment.append(renderItem(item, index)));
         return fragment;
       };
-      const external = (href) => /^https?:\/\//i.test(String(href || ''));
+      const opensNewTab = (href) => /^(https?:\/\/|.*\.pdf$)/i.test(String(href || ''));
       const initials = (name) => String(name || '').split(/\s+/).filter(Boolean).slice(0, 2).map((part) => part[0]).join('').toUpperCase();
       const degreeLines = (degree) => String(degree || '').split(',').map((line) => line.trim()).filter(Boolean).map((line, index, parts) => index < parts.length - 1 ? line + ',' : line);
 
@@ -119,7 +251,7 @@
       function linkNode(label, href) {
         const link = el('a', '', label);
         link.href = href;
-        if (external(href)) { link.target = '_blank'; link.rel = 'noreferrer'; }
+        if (opensNewTab(href)) { link.target = '_blank'; link.rel = 'noopener noreferrer'; }
         return link;
       }
 
@@ -162,7 +294,7 @@
             article.append(el('h3', '', item.collegename || item.school || ''));
             degreeLines(item.degree).forEach((line) => article.append(el('p', '', line)));
             if (item.field) article.append(el('p', '', item.field));
-            if (item.cgpa) article.append(el('p', '', `GPA: ${item.cgpa}`));
+            if (item.score || item.cgpa) article.append(el('p', '', item.score || item.cgpa));
             if (item.daterange || item.date) article.append(el('span', '', item.daterange || item.date));
             return article;
           }));
@@ -177,6 +309,16 @@
           content.append(section('About', about));
         }
 
+        if (Array.isArray(data.skills) && data.skills.length) {
+          const dl = el('dl', 'skills');
+          dl.append(list(data.skills, (item) => {
+            const row = el('div', 'skill-row');
+            row.append(el('dt', '', item.label || ''), el('dd', '', item.items || ''));
+            return row;
+          }));
+          content.append(section('Technical Skills', dl));
+        }
+
         if (Array.isArray(data.experience) && data.experience.length) {
           const timeline = el('div', 'timeline');
           timeline.append(list(data.experience, (item) => {
@@ -185,16 +327,25 @@
             top.append(el('h3', '', [item.role, item.company].filter(Boolean).join(', ')));
             top.append(el('span', '', item.daterange || ''));
             article.append(top);
+            if (item.location) article.append(el('p', 'company-description', item.location));
             if (item.description) article.append(el('p', 'company-description', item.description));
-            if (Array.isArray(item.work) && item.work.length) {
-              const work = el('ul', 'work-list');
-              work.append(list(item.work, (entry) => {
-                const li = el('li');
-                li.append(el('strong', '', `${entry.workname || 'Work'}. `), text(entry.description || ''));
-                return li;
-              }));
-              article.append(work);
+            if (Array.isArray(item.highlights) && item.highlights.length) {
+              const ul = el('ul', 'highlights');
+              ul.append(list(item.highlights, (point) => el('li', '', point)));
+              article.append(ul);
             }
+            (Array.isArray(item.work) ? item.work : []).forEach((entry) => {
+              const project = el('div', 'project');
+              project.append(el('h4', '', entry.workname || 'Project'));
+              if (entry.tech) project.append(el('p', 'tech', entry.tech));
+              const points = Array.isArray(entry.points) ? entry.points : (entry.description ? [entry.description] : []);
+              if (points.length) {
+                const ul = el('ul', 'work-list');
+                ul.append(list(points, (point) => el('li', '', point)));
+                project.append(ul);
+              }
+              article.append(project);
+            });
             return article;
           }));
           content.append(section('Experience', timeline));
@@ -236,20 +387,27 @@
         columns.append(sidebar, content);
         shell.append(columns);
         const footer = el('footer', 'footer');
-        footer.append(el('p', `© ${new Date().getFullYear()} ${profileName}`));
+        footer.append(el('p', '', `© ${new Date().getFullYear()} ${profileName}`));
         shell.append(footer);
         app.append(shell);
       }
 
-      fetch('./data.json')
+      const showError = (error) => {
+        app.replaceChildren();
+        const status = el('div', 'status');
+        status.append(el('strong', '', 'Could not load profile'), el('span', '', error.message));
+        app.append(status);
+      };
+      const useFallback = () => {
+        try { render(JSON.parse(document.getElementById('fallback-data').textContent)); }
+        catch (error) { showError(error); }
+      };
+
+      // Prefer data.json (edit this file). If it can't be fetched (e.g. file:// preview), use the embedded copy.
+      fetch('./data.json', { cache: 'no-cache' })
         .then((response) => { if (!response.ok) throw new Error(`data.json returned ${response.status}`); return response.json(); })
         .then(render)
-        .catch((error) => {
-          app.replaceChildren();
-          const status = el('div', 'status');
-          status.append(el('strong', '', 'Could not load data.json'), el('span', '', `${error.message}. Serve this folder with a static server and open index.html there.`));
-          app.append(status);
-        });
+        .catch(useFallback);
     </script>
   </body>
 </html>
