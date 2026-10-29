@@ -1,90 +1,96 @@
-
 {
-  "about": "I’m a Full Stack Java Developer with 3 years and 5 months of experience building and modernizing enterprise financial applications using Java, Spring Boot, Angular, and relational databases. I enjoy developing end-to-end solutions, integrating third-party systems, automating business workflows, and improving application performance.",
+  "name": "Saravanan G",
+  "role": "Java Full Stack Developer",
+  "location": "Tenkasi, Tamil Nadu, India",
+  "dp": "https://avatars.githubusercontent.com/u/258072806?s=400&u=7e6cf44f36f3bfff4d779f52c2cdde9fb7431498&v=4",
+  "links": {
+    "GitHub": "https://github.com/saravanan-g-p/portfolio/blob/main/Saravanan_CV_A.pdf",
+    "LinkedIn": "https://www.linkedin.com/in/saravanan-g-94176a270",
+    "Email": "mailto:gpsaravanan2002@gmail.com",
+    "Resume": "./Saravanan_CV_A.pdf"
+  },
+  "about": "Java Full Stack Developer with 3 years 5 months of experience building enterprise retail finance, billing, and inventory/stock management systems using Java, Spring Boot microservices, RESTful APIs, Angular, and MySQL/MSSQL. Delivered accounting modules with Tally and SAP integration, HDFC payment gateway integration with dynamic PDF generation, a ticket workflow platform, and a .NET-to-Java migration. Hands-on with Spring Security/JWT (authentication and authorization), JPA/Hibernate, and OTP-based authentication.",
   "currently_looking_for": "Full Stack Java Developer, Java Backend Developer, Spring Boot Developer, Angular Developer, and enterprise application development roles.",
+  "skills": [
+    { "label": "Backend", "items": "Java, Spring Boot, Spring MVC, Spring Framework, Spring Security, JWT, Microservices Architecture, RESTful API Design & Integration, JPA / Hibernate" },
+    { "label": "Frontend", "items": "Angular, TypeScript, HTML5, CSS3, Angular Material, Responsive UI Design" },
+    { "label": "Databases", "items": "MySQL, MSSQL, Query Optimization" },
+    { "label": "Domain / Integration", "items": "Retail Finance & Accounting, Billing, Inventory/Stock Management, Payment Gateway Integration (HDFC), Tally, SAP, Dynamic PDF Generation" },
+    { "label": "Tools", "items": "Maven, Eclipse, Spring Tool Suite 4, VS Code, Tomcat, Postman, MySQL Workbench, SSMS, SQL Developer" },
+    { "label": "Version Control", "items": "Git, SVN" },
+    { "label": "Platforms", "items": "Windows, Linux (Ubuntu)" }
+  ],
   "experience": [
     {
-      "role": "Full Stack Java Developer",
+      "role": "Java Full Stack Developer",
       "company": "JRK Consulting Services Pvt Ltd",
-      "description": "Full-stack engineering across enterprise financial management, payment gateway integration, billing automation, ticket management, and legacy application modernization using Java, Spring Boot, Angular, MySQL, and MSSQL.",
-      "daterange": "2023 – Present",
+      "location": "Tamil Nadu, India",
+      "daterange": "May 2023 – Sep 2026",
+      "highlights": [
+        "Built and maintained Java/Spring Boot backend services and Angular frontends for enterprise finance, billing, and workflow applications, owning features from database design through UI delivery.",
+        "Developed secured RESTful APIs with authentication and authorization using Spring Security and JWT, with data access built on JPA/Hibernate over MySQL and MSSQL."
+      ],
       "work": [
         {
           "workname": "Enterprise Retail Financial Management System",
-          "description": "Developed a full-stack financial management system for retail operations using Java 17, Spring Boot, Angular 14, and MySQL. Designed and implemented modules including Trial Balance, Vendor Purchase, Book Stock, and Expense Management. Integrated Tally and SAP systems for financial reconciliation and reporting. Improved accounting accuracy by 30%, reduced manual errors by 40%, and saved approximately 60 hours per month through automated workflows and validation processes."
+          "tech": "Java / Spring Boot / Microservices / Angular / MySQL",
+          "points": [
+            "Developed a full-stack financial management system for retail operations using Java, Spring Boot, Angular, and MySQL, built on a microservices architecture.",
+            "Designed independent microservices for Trial Balance, Vendor Purchase, Book Stock (inventory/stock management), and Expense Management, communicating through REST APIs.",
+            "Integrated Tally and SAP for financial reconciliation and reporting.",
+            "Increased accounting accuracy by 30% and reduced manual errors by 40% through automated workflows and validation processes, saving approximately 60 hours per month."
+          ]
         },
         {
           "workname": "Secure Payment & Billing Platform (WebScheme Product)",
-          "description": "Enhanced a web-based billing and payment platform using Angular 16 and Spring Boot. Integrated the HDFC payment gateway for secure online transaction processing, implemented dynamic PDF generation, and developed customized client-specific payment workflows. Redesigned more than 15 UI components using Angular Material, improving usability and increasing customer engagement by 35%."
+          "tech": "Spring Boot / Angular",
+          "points": [
+            "Enhanced a web-based billing and payment system using Angular and Spring Boot.",
+            "Completed HDFC payment gateway integration for secure online transaction processing.",
+            "Implemented dynamic PDF generation and customized client-specific payment workflows.",
+            "Redesigned 15+ UI components using Angular Material, contributing to a reported 35% increase in customer engagement."
+          ]
         },
         {
           "workname": "Ticket Management System",
-          "description": "Built a Java and Spring Boot workflow automation service for managing defects, enhancements, and support tickets throughout the software development lifecycle. Automated ticket creation, assignment, development, QA validation, and delivery with role-based status updates. Implemented real-time tracking to improve visibility across teams and streamlined coordination between development and QA."
+          "tech": "Java / Spring Boot / Workflow Automation",
+          "points": [
+            "Built a Java/Spring Boot service to manage defects, enhancements, and support tickets across the SDLC.",
+            "Automated the ticket lifecycle (creation, assignment, development, QA validation, delivery) with role-based status updates and real-time progress tracking.",
+            "Improved visibility across teams and streamlined development-to-QA handoffs for faster issue resolution."
+          ]
         },
         {
           "workname": "Legacy Application Modernization (.NET to Java Migration)",
-          "description": "Led the migration of legacy desktop application modules from .NET to Java to improve maintainability and scalability. Re-engineered business logic, implemented OTP-based authentication, and optimized database interactions using MSSQL and JPA. Improved application response times by approximately 25% while maintaining backward compatibility and achieving 99.9% system uptime during the transition."
+          "tech": "Java / MSSQL / JPA",
+          "points": [
+            "Migrated legacy desktop modules from .NET to Java, improving maintainability and scalability.",
+            "Re-engineered business logic and implemented OTP-based authentication.",
+            "Optimized database interactions using MSSQL and JPA, improving application response times by approximately 25%.",
+            "Maintained backward compatibility during the transition, with 99.9% system uptime."
+          ]
         }
       ]
-    }
-  ],
-  "selected_work": [
-    {
-      "name": "Enterprise Retail Financial Management System",
-      "oneliner": "Enterprise financial management with automated accounting and ERP integrations.",
-      "year": 2023,
-      "description": "A full-stack retail financial management application developed using Java 17, Spring Boot, Angular 14, and MySQL. Includes accounting, inventory, purchase, and expense modules with Tally and SAP integration. Automation improved accounting accuracy by 30%, reduced manual errors by 40%, and saved approximately 60 hours per month.",
-      "link": ""
-    },
-    {
-      "name": "WebScheme Payment & Billing Platform",
-      "oneliner": "Secure payment processing and automated billing workflows.",
-      "year": 2023,
-      "description": "A payment and billing platform enhanced using Angular 16 and Spring Boot, featuring HDFC payment gateway integration, dynamic PDF generation, customized payment workflows, and more than 15 redesigned Angular Material UI components.",
-      "link": ""
-    },
-    {
-      "name": "Ticket Management System",
-      "oneliner": "Workflow automation for defects, enhancements, and support tickets.",
-      "year": 2023,
-      "description": "A Java and Spring Boot ticket management service supporting the complete development lifecycle, from issue creation and assignment to development, QA validation, and delivery. Includes role-based status management and real-time progress tracking.",
-      "link": ""
-    },
-    {
-      "name": "Legacy .NET to Java Migration",
-      "oneliner": "Modernizing legacy applications with Java and improved database performance.",
-      "year": 2023,
-      "description": "Modernization of legacy desktop applications through .NET-to-Java migration, business logic re-engineering, OTP-based authentication, and MSSQL/JPA optimization. Improved response times by approximately 25% while maintaining 99.9% system uptime.",
-      "link": ""
     }
   ],
   "education": [
     {
       "collegename": "Einstein College of Engineering",
-      "degree": "Bachelor of Engineering, Mechanical Engineering",
-      "cgpa": "8.20/10",
+      "degree": "B.E. Mechanical Engineering",
+      "score": "CGPA 8.20/10",
       "daterange": "2019 – 2023"
     },
     {
       "collegename": "S.S.V Higher Secondary School",
-      "degree": "Higher Secondary Certificate (HSC)",
-      "cgpa": "76%",
+      "degree": "Higher Secondary (HSC)",
+      "score": "76%",
       "daterange": "2018 – 2019"
     },
     {
       "collegename": "Government High School",
-      "degree": "Secondary School Leaving Certificate (SSLC)",
-      "cgpa": "92%",
+      "degree": "Secondary (SSLC)",
+      "score": "92%",
       "daterange": "2016 – 2017"
     }
-  ],
-  "name": "Saravanan G",
-  "role": "Full Stack Java Developer",
-  "location": "Tenkasi, Tamil Nadu, India",
-  "dp": "https://avatars.githubusercontent.com/u/258072806?s=400&u=7e6cf44f36f3bfff4d779f52c2cdde9fb7431498&v=4",
-  "links": {
-    "GitHub": "https://github.com/saravanan-g-p",
-    "LinkedIn": "https://www.linkedin.com/in/saravanan-g-94176a270",
-    "Resume": "https://github.com/saravanan-g-p/portfolio/blob/main/Saravanan_CV_A.pdf"
-  }
+  ]
 }
